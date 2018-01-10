@@ -1,0 +1,280 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+TelOne Gamification
+</name>
+</assembly>
+<members>
+<member name="T:TelOne_Gamification.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:TelOne_Gamification.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:TelOne_Gamification.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:TelOne_Gamification.My.Resources.Resources._071022_TelOneConvergenceDigitalAds_1785x560px_r03_page_006">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TelOne_Gamification.My.Resources.Resources._071022_TelOneConvergenceDigitalAds_1785x560px_r03_page_008">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TelOne_Gamification.My.Resources.Resources._071060_TelOnePrepaidLady_Web1785x560">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TelOne_Gamification.My.Resources.Resources.home_premier">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TelOne_Gamification.My.Resources.Resources.homeplus">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TelOne_Gamification.My.Resources.Resources.IMG_4824">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TelOne_Gamification.My.Resources.Resources.infinity_pro">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TelOne_Gamification.My.Resources.Resources.login">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TelOne_Gamification.My.Resources.Resources.reg">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TelOne_Gamification.My.Resources.Resources.si_badges">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TelOne_Gamification.My.Resources.Resources.telone_2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TelOne_Gamification.My.Resources.Resources.telone_2___Copy">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TelOne_Gamification.My.Resources.Resources.telone_satellite">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TelOne_Gamification.My.Resources.Resources.The_new_TelOne_Logo__zoom">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TelOne_Gamification.My.Resources.Resources.top">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TelOne_Gamification.My.Resources.Resources.topup_voice">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TelOne_Gamification.My.Resources.Resources.voice_website_slider_new">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TelOne_Gamification.My.Resources.Resources.VP19231_TELONE_FIBRE_BROADBAND_NEW_TARIFFS_Web_Banners_450x150_0">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:TelOne_Gamification.FrmLogin">
+ <summary>
+ Class FrmLogin.
+ </summary>
+ <seealso cref="T:System.Windows.Forms.Form" />
+</member>
+<member name="F:TelOne_Gamification.FrmLogin._con">
+ <summary>
+ The con
+ </summary>
+</member>
+<member name="F:TelOne_Gamification.FrmLogin._cmd">
+ <summary>
+ The command
+ </summary>
+</member>
+<member name="F:TelOne_Gamification.FrmLogin._timercount">
+ <summary>
+ The timercount
+ </summary>
+</member>
+<member name="F:TelOne_Gamification.FrmLogin._lastrecordday">
+ <summary>
+ The lastrecordday
+ </summary>
+</member>
+<member name="F:TelOne_Gamification.FrmLogin._resultnumber">
+ <summary>
+ The resultnumber
+ </summary>
+</member>
+<member name="M:TelOne_Gamification.FrmLogin.SendMessage(System.IntPtr,System.Int32,System.Int32,System.String)">
+ <summary>
+ Sends the message.
+ </summary>
+ <param name="hWnd">The h WND.</param>
+ <param name="msg">The MSG.</param>
+ <param name="wParam">The w parameter.</param>
+ <param name="lParam">The l parameter.</param>
+ <returns>Int32.</returns>
+</member>
+<member name="M:TelOne_Gamification.FrmLogin.Changeformat">
+ <summary>
+ Changeformats this instance.
+ </summary>
+</member>
+<member name="M:TelOne_Gamification.FrmLogin.Checkconnection">
+ <summary>
+ Checkconnections this instance.
+ </summary>
+</member>
+<member name="M:TelOne_Gamification.FrmLogin.FrmLogin_Load(System.Object,System.EventArgs)">
+ <summary>
+ Handles the Load event of the FrmLogin control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+</member>
+<member name="M:TelOne_Gamification.FrmLogin.Timer2_Tick(System.Object,System.EventArgs)">
+ <summary>
+ Handles the Tick event of the Timer2 control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+</member>
+<member name="M:TelOne_Gamification.FrmLogin.Login">
+ <summary>
+ Logins this instance.
+ </summary>
+</member>
+<member name="M:TelOne_Gamification.FrmLogin.txtpwd_TextChanged(System.Object,System.EventArgs)">
+ <summary>
+ Handles the TextChanged event of the txtpwd control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+</member>
+<member name="M:TelOne_Gamification.FrmLogin.FrmLogin_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+ <summary>
+ Handles the FormClosing event of the FrmLogin control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.Windows.Forms.FormClosingEventArgs"/> instance containing the event data.</param>
+</member>
+<member name="M:TelOne_Gamification.FrmLogin.FrmLogin_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ Handles the KeyDown event of the FrmLogin control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.Windows.Forms.KeyEventArgs"/> instance containing the event data.</param>
+</member>
+<member name="M:TelOne_Gamification.FrmLogin.LinkLabel1_LinkClicked(System.Object,System.Windows.Forms.LinkLabelLinkClickedEventArgs)">
+ <summary>
+ Handles the LinkClicked event of the LinkLabel1 control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.Windows.Forms.LinkLabelLinkClickedEventArgs"/> instance containing the event data.</param>
+</member>
+<member name="M:TelOne_Gamification.FrmLogin.SimpleButton1_Click(System.Object,System.EventArgs)">
+ <summary>
+ Handles the Click event of the SimpleButton1 control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+</member>
+<member name="M:TelOne_Gamification.FrmLogin.LinkLabel3_MouseHover(System.Object,System.EventArgs)">
+ <summary>
+ Handles the MouseHover event of the LinkLabel3 control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+</member>
+<member name="M:TelOne_Gamification.FrmLogin.SimpleButton2_Click(System.Object,System.EventArgs)">
+ <summary>
+ Handles the Click event of the SimpleButton2 control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+</member>
+<member name="M:TelOne_Gamification.frmRegister.SendSMS(System.String,System.String,System.String,System.String)">
+ <summary>
+ 'Function send Http request and returns the status of the message
+ </summary>
+ <param name="username">Account username </param>
+ <param name="webservicesToken">Webservices token. To get the web services token, login to the Bulk SMS system. Got To “My Account”, Then Click On “User Configuration”, And For the screen that comes up, copy the Webservices token.</param>
+ <param name="receipientMobileNumber">Receipient Mobile Number. You can put multiple number separated by comma</param>
+ <param name="SMSMessage">SMS Message </param>
+ <returns></returns>
+</member>
+<member name="M:TelOne_Gamification.Passwordrecover.SendSMS(System.String,System.String,System.String,System.String)">
+ <summary>
+ 'Function send Http request and returns the status of the message
+ </summary>
+ <param name="username">Account username </param>
+ <param name="webservicesToken">Webservices token. To get the web services token, login to the Bulk SMS system. Got To “My Account”, Then Click On “User Configuration”, And For the screen that comes up, copy the Webservices token.</param>
+ <param name="receipientMobileNumber">Receipient Mobile Number. You can put multiple number separated by comma</param>
+ <param name="SMSMessage">SMS Message </param>
+ <returns></returns>
+</member>
+<member name="F:TelOne_Gamification.TelOneMain.realcoID">
+ <summary>
+ The realco identifier
+ </summary>
+</member>
+<member name="F:TelOne_Gamification.TelOneMain.realcompanyname">
+ <summary>
+ The real company name
+ </summary>
+</member>
+<member name="F:TelOne_Gamification.TelOneMain.username">
+ <summary>
+ The user name
+ </summary>
+</member>
+<member name="M:TelOne_Gamification.TelOneMain.SendSMS(System.String,System.String,System.String,System.String)">
+ <summary>
+ 'Function send Http request and returns the status of the message
+ </summary>
+ <param name="username">Account username </param>
+ <param name="webservicesToken">Webservices token. To get the web services token, login to the Bulk SMS system. Got To “My Account”, Then Click On “User Configuration”, And For the screen that comes up, copy the Webservices token.</param>
+ <param name="receipientMobileNumber">Receipient Mobile Number. You can put multiple number separated by comma</param>
+ <param name="SMSMessage">SMS Message </param>
+ <returns></returns>
+</member>
+</members>
+</doc>
