@@ -102,14 +102,25 @@ Public Class TelOneMain
                 If String.IsNullOrEmpty(databought) Then
                     MsgBox("You have no data, purchase data first")
                 Else
+
+
                     CurrentData = CDbl(databought) - CDbl(dataused) - CDbl(LabelComponent2.Text)
+                    If CurrentData <= 0 Then
+                        'MsgBox("You have depleted your monthly package data")
+                        Timer1.Stop()
+                        Timer2.Stop()
+                        closeApp()
+                        Exit Sub
+                    End If
+
                     Label14.Text = Math.Round(CurrentData, 2)
 
 
-                    If CurrentData = 0 Then
-                        MsgBox("You have depleted your monthly package data")
-                        closeApp()
-                    End If
+                    'If CurrentData <= 0 Then
+                    '    MsgBox("You have depleted your monthly package data")
+                    '    closeApp()
+                    '    'Dispose()
+                    'End If
 
                 End If
             End While
@@ -121,6 +132,7 @@ Public Class TelOneMain
         End Try
     End Sub
     Private Sub TelOneMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Label14.Text = "0"
         LoadgridLEADERBOARD()
         Try
             txtusergroup.Text = FrmLogin.usergroup.ToUpper
@@ -235,10 +247,22 @@ Public Class TelOneMain
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        If CurrentData <= 0 Then
+            'MsgBox("You have depleted your monthly package data")
+            Timer1.Stop()
+            Timer2.Stop()
+            closeApp()
+            Exit Sub
+        End If
+
         UpdateStats()
     End Sub
 
     Private Sub SimpleButton2_Click(sender As Object, e As EventArgs) Handles SimpleButton2.Click
+        If Label14.Text = "0" Then
+            MsgBox("You have no data available")
+            Exit Sub
+        End If
         'For git
         ' select adapter to monitor...
         If ComboBox1.SelectedIndex > -1 Then
@@ -319,7 +343,7 @@ Public Class TelOneMain
         'TOTAL
         ArcScaleComponent1.Value = 0
         LabelComponent2.Text = "0"
-
+        Timer2.Stop()
         Dispose()
     End Sub
 
@@ -439,6 +463,13 @@ Public Class TelOneMain
     End Sub
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
+        If CurrentData <= 0 Then
+            'MsgBox("You have depleted your monthly package data")
+            Timer1.Stop()
+            Timer2.Stop()
+            closeApp()
+            Exit Sub
+        End If
         checkdataleft()
     End Sub
 
