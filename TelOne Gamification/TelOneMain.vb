@@ -467,7 +467,7 @@ Public Class TelOneMain
             'MsgBox("You have depleted your monthly package data")
             Timer1.Stop()
             Timer2.Stop()
-            closeApp()
+            'closeApp()
             Exit Sub
         End If
         checkdataleft()

@@ -201,3 +201,4 @@ C:\Users\Developer\Documents\TelOne Gamification\TelOne Gamification\obj\Debug\T
 C:\Users\Developer\Documents\TelOne Gamification\TelOne Gamification\obj\Debug\TelOne Gamification.exe
 C:\Users\Developer\Documents\TelOne Gamification\TelOne Gamification\obj\Debug\TelOne Gamification.xml
 C:\Users\Developer\Documents\TelOne Gamification\TelOne Gamification\obj\Debug\TelOne Gamification.pdb
+C:\Users\Developer\Documents\TelOne Gamification\TelOne Gamification\obj\Debug\TelOne Gamification.vbprojResolveAssemblyReference.cache
