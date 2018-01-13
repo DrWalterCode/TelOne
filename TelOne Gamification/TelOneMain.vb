@@ -38,6 +38,7 @@ Public Class TelOneMain
     Private startUploaded, startDownloaded As Long
 
     Public Sub LoadgridLEADERBOARD()
+        checkforBadges()
         _con.Close()
         Try
             Dim strQuery = "select * from leaderboard "
@@ -52,6 +53,40 @@ Public Class TelOneMain
         Catch ex As Exception
             _con.Close()
             'MsgBox(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub checkforBadges()
+        Try
+            _con.Close()
+            _con.Open()
+            _cmd = New MySqlCommand("select * from leaderboard where usernumber='" & FrmLogin.lblUsername & "'  ", _con)
+            Dim dr As MySqlDataReader = _cmd.ExecuteReader()
+            While dr.Read()
+                Dim points As String = dr.GetString("points").ToString()
+                If String.IsNullOrEmpty(points) Then
+                    'MsgBox("You have no data, purchase data first")
+                Else
+                    If CDbl(points) > 90 Then
+                        badge1.Visible = True
+                        badge2.Visible = True
+                        badge3.Visible = True
+                    ElseIf CDbl(points) > 60 Then
+                        badge1.Visible = True
+                        badge2.Visible = True
+                        badge3.Visible = False
+                    ElseIf CDbl(points) > 30 Then
+                        badge1.Visible = True
+                        badge2.Visible = False
+                        badge3.Visible = False
+                    End If
+                End If
+            End While
+            _cmd.Dispose()
+            _con.Close()
+        Catch ex As Exception
+            '         _cmd.Dispose()
+            _con.Close()
         End Try
     End Sub
 
@@ -469,5 +504,39 @@ Public Class TelOneMain
         End Try
         Return SmsStatusMsg
     End Function
+
+    Private Sub TabPane2_SelectedPageIndexChanged(sender As Object, e As EventArgs) _
+        Handles TabPane2.SelectedPageIndexChanged
+        Try
+            Select Case TabPane2.SelectedPageIndex
+                Case 0
+                    Dim report As New usagerepo
+                    report.Parameters("USERNUMBER").Value = FrmLogin.lblUsername.ToUpper
+                    ' Hide the Parameters UI from end-users.
+                    report.Parameters("USERNUMBER").Visible = False
+                    Me.DocumentViewer1.DocumentSource = report
+                    report.CreateDocument(False)
+
+                Case 1
+                    Dim report As New pointsrepo
+                    report.Parameters("USERNUMBER").Value = FrmLogin.lblUsername.ToUpper
+                    ' Hide the Parameters UI from end-users.
+                    report.Parameters("USERNUMBER").Visible = False
+                    Me.DocumentViewer2.DocumentSource = report
+                    report.CreateDocument(False)
+                Case 2
+                    Dim report As New paymentsrepo
+                    report.Parameters("USERNUMBER").Value = FrmLogin.lblUsername.ToUpper
+                    ' Hide the Parameters UI from end-users.
+                    report.Parameters("USERNUMBER").Visible = False
+                    Me.DocumentViewer3.DocumentSource = report
+                    report.CreateDocument(False)
+
+            End Select
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
 
 End Class

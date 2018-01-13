@@ -14,7 +14,10 @@ Delegate Sub FuncCallback(ByRef obj As Object, ByVal text As String)
         Next
         Return False
     End Function
-
+    ''' <summary>
+    ''' 
+    ''' </summary>
+    ''' <returns></returns>
     Public Function GetNetInteface() As List(Of NetworkInterface)
         Dim NetInts = NetworkInterface.GetAllNetworkInterfaces
         Dim NetList As New List(Of NetworkInterface)

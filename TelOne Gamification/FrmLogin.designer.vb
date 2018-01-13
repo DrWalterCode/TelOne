@@ -22,35 +22,33 @@ Partial Class FrmLogin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim TileItemElement1 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemFrame1 As DevExpress.XtraEditors.TileItemFrame = New DevExpress.XtraEditors.TileItemFrame()
-        Dim TileItemElement2 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemFrame2 As DevExpress.XtraEditors.TileItemFrame = New DevExpress.XtraEditors.TileItemFrame()
-        Dim TileItemElement3 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemFrame3 As DevExpress.XtraEditors.TileItemFrame = New DevExpress.XtraEditors.TileItemFrame()
-        Dim TileItemElement4 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemFrame4 As DevExpress.XtraEditors.TileItemFrame = New DevExpress.XtraEditors.TileItemFrame()
-        Dim TileItemElement5 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemFrame5 As DevExpress.XtraEditors.TileItemFrame = New DevExpress.XtraEditors.TileItemFrame()
-        Dim TileItemElement6 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Me.components = New System.ComponentModel.Container()
+        Dim TileItemElement13 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemFrame11 As DevExpress.XtraEditors.TileItemFrame = New DevExpress.XtraEditors.TileItemFrame()
+        Dim TileItemElement14 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemFrame12 As DevExpress.XtraEditors.TileItemFrame = New DevExpress.XtraEditors.TileItemFrame()
+        Dim TileItemElement15 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemFrame13 As DevExpress.XtraEditors.TileItemFrame = New DevExpress.XtraEditors.TileItemFrame()
+        Dim TileItemElement16 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemFrame14 As DevExpress.XtraEditors.TileItemFrame = New DevExpress.XtraEditors.TileItemFrame()
+        Dim TileItemElement17 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemFrame15 As DevExpress.XtraEditors.TileItemFrame = New DevExpress.XtraEditors.TileItemFrame()
+        Dim TileItemElement18 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmLogin))
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Timer1 = New System.Windows.Forms.Timer()
-        Me.Timer2 = New System.Windows.Forms.Timer()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.TileControl1 = New DevExpress.XtraEditors.TileControl()
         Me.TileGroup2 = New DevExpress.XtraEditors.TileGroup()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.ProgressPanel1 = New DevExpress.XtraWaitForm.ProgressPanel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TileItem1 = New DevExpress.XtraEditors.TileItem()
+        Me.ProgressPanel1 = New DevExpress.XtraWaitForm.ProgressPanel()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.txtpwd = New System.Windows.Forms.TextBox()
         Me.txtusername = New System.Windows.Forms.MaskedTextBox()
         Me.lblerror = New System.Windows.Forms.Label()
         Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -99,78 +97,58 @@ Partial Class FrmLogin
         Me.TileGroup2.Items.Add(Me.TileItem1)
         Me.TileGroup2.Name = "TileGroup2"
         '
-        'Label1
+        'TileItem1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.ForeColor = System.Drawing.Color.MediumBlue
-        Me.Label1.Location = New System.Drawing.Point(1100, 529)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(143, 17)
-        Me.Label1.TabIndex = 330
-        Me.Label1.Text = "I Forgot My Password"
+        Me.TileItem1.CurrentFrameIndex = 1
+        TileItemElement13.Image = Global.TelOne_Gamification.My.Resources.Resources._071022_TelOneConvergenceDigitalAds_1785x560px_r03_page_008
+        TileItemElement13.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
+        TileItemElement13.Text = "TileItem1"
+        Me.TileItem1.Elements.Add(TileItemElement13)
+        TileItemElement14.Image = Global.TelOne_Gamification.My.Resources.Resources._071022_TelOneConvergenceDigitalAds_1785x560px_r03_page_006
+        TileItemElement14.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
+        TileItemElement14.Text = "TileItem1"
+        TileItemFrame11.Elements.Add(TileItemElement14)
+        TileItemFrame11.Image = Global.TelOne_Gamification.My.Resources.Resources._071022_TelOneConvergenceDigitalAds_1785x560px_r03_page_006
+        TileItemElement15.Image = Global.TelOne_Gamification.My.Resources.Resources._071022_TelOneConvergenceDigitalAds_1785x560px_r03_page_008
+        TileItemElement15.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
+        TileItemElement15.Text = "TileItem1"
+        TileItemFrame12.Elements.Add(TileItemElement15)
+        TileItemFrame12.Image = Global.TelOne_Gamification.My.Resources.Resources._071022_TelOneConvergenceDigitalAds_1785x560px_r03_page_008
+        TileItemElement16.Image = Global.TelOne_Gamification.My.Resources.Resources._071060_TelOnePrepaidLady_Web1785x560
+        TileItemElement16.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
+        TileItemElement16.Text = "TileItem1"
+        TileItemFrame13.Elements.Add(TileItemElement16)
+        TileItemFrame13.Image = Global.TelOne_Gamification.My.Resources.Resources._071060_TelOnePrepaidLady_Web1785x560
+        TileItemElement17.Image = Global.TelOne_Gamification.My.Resources.Resources.telone_satellite
+        TileItemElement17.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
+        TileItemElement17.Text = "TileItem1"
+        TileItemFrame14.Elements.Add(TileItemElement17)
+        TileItemFrame14.Image = Global.TelOne_Gamification.My.Resources.Resources.telone_satellite
+        TileItemElement18.Image = Global.TelOne_Gamification.My.Resources.Resources.voice_website_slider_new
+        TileItemElement18.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
+        TileItemElement18.Text = "TileItem1"
+        TileItemFrame15.Elements.Add(TileItemElement18)
+        TileItemFrame15.Image = Global.TelOne_Gamification.My.Resources.Resources.voice_website_slider_new
+        Me.TileItem1.Frames.Add(TileItemFrame11)
+        Me.TileItem1.Frames.Add(TileItemFrame12)
+        Me.TileItem1.Frames.Add(TileItemFrame13)
+        Me.TileItem1.Frames.Add(TileItemFrame14)
+        Me.TileItem1.Frames.Add(TileItemFrame15)
+        Me.TileItem1.Id = 0
+        Me.TileItem1.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide
+        Me.TileItem1.Name = "TileItem1"
         '
         'ProgressPanel1
         '
         Me.ProgressPanel1.Appearance.BackColor = System.Drawing.Color.Transparent
         Me.ProgressPanel1.Appearance.Options.UseBackColor = True
         Me.ProgressPanel1.BarAnimationElementThickness = 2
-        Me.ProgressPanel1.Location = New System.Drawing.Point(1077, 181)
+        Me.ProgressPanel1.Location = New System.Drawing.Point(162, 39)
         Me.ProgressPanel1.Name = "ProgressPanel1"
         Me.ProgressPanel1.Size = New System.Drawing.Size(246, 66)
         Me.ProgressPanel1.TabIndex = 331
         Me.ProgressPanel1.Text = "ProgressPanel1"
         Me.ProgressPanel1.Visible = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.TelOne_Gamification.My.Resources.Resources.reg
-        Me.PictureBox1.Location = New System.Drawing.Point(917, 572)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(565, 50)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 332
-        Me.PictureBox1.TabStop = False
-        '
-        'TileItem1
-        '
-        Me.TileItem1.CurrentFrameIndex = 2
-        TileItemElement1.Image = Global.TelOne_Gamification.My.Resources.Resources._071060_TelOnePrepaidLady_Web1785x560
-        TileItemElement1.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
-        TileItemElement1.Text = "TileItem1"
-        Me.TileItem1.Elements.Add(TileItemElement1)
-        TileItemElement2.Image = Global.TelOne_Gamification.My.Resources.Resources._071022_TelOneConvergenceDigitalAds_1785x560px_r03_page_006
-        TileItemElement2.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
-        TileItemElement2.Text = "TileItem1"
-        TileItemFrame1.Elements.Add(TileItemElement2)
-        TileItemFrame1.Image = Global.TelOne_Gamification.My.Resources.Resources._071022_TelOneConvergenceDigitalAds_1785x560px_r03_page_006
-        TileItemElement3.Image = Global.TelOne_Gamification.My.Resources.Resources._071022_TelOneConvergenceDigitalAds_1785x560px_r03_page_008
-        TileItemElement3.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
-        TileItemElement3.Text = "TileItem1"
-        TileItemFrame2.Elements.Add(TileItemElement3)
-        TileItemFrame2.Image = Global.TelOne_Gamification.My.Resources.Resources._071022_TelOneConvergenceDigitalAds_1785x560px_r03_page_008
-        TileItemElement4.Image = Global.TelOne_Gamification.My.Resources.Resources._071060_TelOnePrepaidLady_Web1785x560
-        TileItemElement4.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
-        TileItemElement4.Text = "TileItem1"
-        TileItemFrame3.Elements.Add(TileItemElement4)
-        TileItemFrame3.Image = Global.TelOne_Gamification.My.Resources.Resources._071060_TelOnePrepaidLady_Web1785x560
-        TileItemElement5.Image = Global.TelOne_Gamification.My.Resources.Resources.telone_satellite
-        TileItemElement5.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
-        TileItemElement5.Text = "TileItem1"
-        TileItemFrame4.Elements.Add(TileItemElement5)
-        TileItemFrame4.Image = Global.TelOne_Gamification.My.Resources.Resources.telone_satellite
-        TileItemElement6.Image = Global.TelOne_Gamification.My.Resources.Resources.voice_website_slider_new
-        TileItemElement6.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
-        TileItemElement6.Text = "TileItem1"
-        TileItemFrame5.Elements.Add(TileItemElement6)
-        TileItemFrame5.Image = Global.TelOne_Gamification.My.Resources.Resources.voice_website_slider_new
-        Me.TileItem1.Frames.Add(TileItemFrame1)
-        Me.TileItem1.Frames.Add(TileItemFrame2)
-        Me.TileItem1.Frames.Add(TileItemFrame3)
-        Me.TileItem1.Frames.Add(TileItemFrame4)
-        Me.TileItem1.Frames.Add(TileItemFrame5)
-        Me.TileItem1.Id = 0
-        Me.TileItem1.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide
-        Me.TileItem1.Name = "TileItem1"
         '
         'Panel4
         '
@@ -186,28 +164,14 @@ Partial Class FrmLogin
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.White
-        Me.Panel1.BackgroundImage = Global.TelOne_Gamification.My.Resources.Resources.login
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Panel1.Controls.Add(Me.txtpwd)
         Me.Panel1.Controls.Add(Me.txtusername)
+        Me.Panel1.Controls.Add(Me.ProgressPanel1)
         Me.Panel1.Controls.Add(Me.lblerror)
-        Me.Panel1.Location = New System.Drawing.Point(897, 263)
+        Me.Panel1.Location = New System.Drawing.Point(897, 241)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(585, 250)
+        Me.Panel1.Size = New System.Drawing.Size(585, 272)
         Me.Panel1.TabIndex = 325
-        '
-        'txtpwd
-        '
-        Me.txtpwd.BackColor = System.Drawing.Color.White
-        Me.txtpwd.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtpwd.ForeColor = System.Drawing.Color.Black
-        Me.txtpwd.Location = New System.Drawing.Point(146, 181)
-        Me.txtpwd.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtpwd.Name = "txtpwd"
-        Me.txtpwd.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtpwd.Size = New System.Drawing.Size(232, 23)
-        Me.txtpwd.TabIndex = 303
-        Me.txtpwd.UseSystemPasswordChar = True
         '
         'txtusername
         '
@@ -215,7 +179,7 @@ Partial Class FrmLogin
         Me.txtusername.BeepOnError = True
         Me.txtusername.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtusername.ForeColor = System.Drawing.Color.Black
-        Me.txtusername.Location = New System.Drawing.Point(146, 100)
+        Me.txtusername.Location = New System.Drawing.Point(143, 139)
         Me.txtusername.Margin = New System.Windows.Forms.Padding(4)
         Me.txtusername.Name = "txtusername"
         Me.txtusername.Size = New System.Drawing.Size(232, 23)
@@ -227,7 +191,7 @@ Partial Class FrmLogin
         Me.lblerror.BackColor = System.Drawing.Color.White
         Me.lblerror.Font = New System.Drawing.Font("Corbel", 9.75!)
         Me.lblerror.ForeColor = System.Drawing.Color.Gray
-        Me.lblerror.Location = New System.Drawing.Point(147, 75)
+        Me.lblerror.Location = New System.Drawing.Point(144, 114)
         Me.lblerror.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblerror.Name = "lblerror"
         Me.lblerror.Size = New System.Drawing.Size(222, 21)
@@ -264,14 +228,23 @@ Partial Class FrmLogin
         Me.SimpleButton1.TabIndex = 323
         Me.SimpleButton1.Text = "Exit Application"
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.White
+        Me.Label1.Font = New System.Drawing.Font("Tempus Sans ITC", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(917, 200)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(525, 26)
+        Me.Label1.TabIndex = 347
+        Me.Label1.Text = "ENTER YOUR TELONE NUMBER TO USE PLATFORM "
+        '
         'FrmLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1800, 897)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.ProgressPanel1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TileControl1)
         Me.Controls.Add(Me.Panel2)
@@ -285,7 +258,6 @@ Partial Class FrmLogin
         Me.Name = "FrmLogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TelOne Gamification ( Point Badges and Leaderboards )"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.ResumeLayout(false)
@@ -295,7 +267,6 @@ End Sub
     Friend WithEvents Label7 As Label
     Friend WithEvents lblerror As Label
     Friend WithEvents txtusername As MaskedTextBox
-    Friend WithEvents txtpwd As TextBox
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Timer2 As Timer
     Friend WithEvents SimpleButton1 As DevExpress.XtraEditors.SimpleButton
@@ -305,7 +276,6 @@ End Sub
     Friend WithEvents TileControl1 As DevExpress.XtraEditors.TileControl
     Friend WithEvents TileGroup2 As DevExpress.XtraEditors.TileGroup
     Friend WithEvents TileItem1 As DevExpress.XtraEditors.TileItem
-    Friend WithEvents Label1 As Label
     Friend WithEvents ProgressPanel1 As DevExpress.XtraWaitForm.ProgressPanel
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Label1 As Label
 End Class

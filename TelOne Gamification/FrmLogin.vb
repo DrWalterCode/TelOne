@@ -88,7 +88,7 @@ Public Class FrmLogin
     ''' <param name="sender">The source of the event.</param>
     ''' <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
     Private Sub FrmLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        SendMessage(Me.txtpwd.Handle, &H1501, 0, "Enter password here...")
+        'SendMessage(Me.txtpwd.Handle, &H1501, 0, "Enter password here...")
         SendMessage(Me.txtusername.Handle, &H1501, 0, "Enter system username...")
 
         Changeformat()
@@ -123,7 +123,7 @@ Public Class FrmLogin
             _con.Open()
             _cmd =
                 New MySqlCommand(
-                    "Select * from users where BINARY username like '%" + txtusername.Text + "%' and BINARY Password = '" + txtpwd.Text + "'",
+                    "Select * from users where BINARY username = '" + txtusername.Text + "' ",
                     _con)
             Dim reader = _cmd.ExecuteReader()
             If reader.Read() = True Then
@@ -154,7 +154,7 @@ Public Class FrmLogin
     ''' </summary>
     ''' <param name="sender">The source of the event.</param>
     ''' <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
-    Private Sub txtpwd_TextChanged(sender As Object, e As EventArgs) Handles txtpwd.TextChanged
+    Private Sub txtpwd_TextChanged(sender As Object, e As EventArgs) Handles txtusername.TextChanged
         Login()
     End Sub
 
@@ -209,7 +209,7 @@ Public Class FrmLogin
             'FrmHomePage.ShowDialog()
             Label7.Text = ""
             txtusername.Select()
-            txtpwd.Text = ""
+            'txtpwd.Text = ""
             txtusername.Text = ""
             lblerror.Visible = False
         End If
@@ -273,11 +273,15 @@ Public Class FrmLogin
         Passwordrecover.ShowDialog()
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+    Private Sub Label1_Click(sender As Object, e As EventArgs)
         Passwordrecover.ShowDialog()
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
         frmRegister.ShowDialog()
+    End Sub
+
+    Private Sub txtusername_MaskInputRejected(sender As Object, e As MaskInputRejectedEventArgs) Handles txtusername.MaskInputRejected
+
     End Sub
 End Class
