@@ -38,6 +38,7 @@ Public Class TelOneMain
     Private startUploaded, startDownloaded As Long
 
     Public Sub LoadgridLEADERBOARD()
+        'checkdataleft()
         checkforBadges()
         _con.Close()
         Try
@@ -96,11 +97,13 @@ Public Class TelOneMain
             _con.Open()
             _cmd = New MySqlCommand("select * from currentmonth_usage_view where usernumber='" & FrmLogin.lblUsername & "'  ", _con)
             Dim dr As MySqlDataReader = _cmd.ExecuteReader()
-            While dr.Read()
+
+            If dr.HasRows() Then
+                dr.Read()
                 Dim dataused As String = dr.GetString("usage").ToString()
                 Dim databought As String = dr.GetString("data").ToString()
                 If String.IsNullOrEmpty(databought) Then
-                    MsgBox("You have no data, purchase data first")
+                    'MsgBox("You have no data, purchase data first")
                 Else
 
 
@@ -123,7 +126,14 @@ Public Class TelOneMain
                     'End If
 
                 End If
-            End While
+            Else
+                CurrentData = 0
+                Label14.Text = "0"
+                'Code
+            End If
+
+
+
             _cmd.Dispose()
             _con.Close()
         Catch ex As Exception
@@ -132,7 +142,6 @@ Public Class TelOneMain
         End Try
     End Sub
     Private Sub TelOneMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Label14.Text = "0"
         LoadgridLEADERBOARD()
         Try
             txtusergroup.Text = FrmLogin.usergroup.ToUpper
@@ -238,7 +247,7 @@ Public Class TelOneMain
             ArcScaleComponent1.Value = Double.Parse((totaldata) / 1048576)
             LabelComponent2.Text = String.Format("{0} ", Math.Round((totaldata) / 1048576, 2))
         Catch ex As Exception
-            Debug.WriteLine(ex.Message)
+            MsgBox(ex.Message)
         End Try
     End Sub
 
@@ -247,14 +256,6 @@ Public Class TelOneMain
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        If CurrentData <= 0 Then
-            'MsgBox("You have depleted your monthly package data")
-            Timer1.Stop()
-            Timer2.Stop()
-            closeApp()
-            Exit Sub
-        End If
-
         UpdateStats()
     End Sub
 
@@ -463,6 +464,7 @@ Public Class TelOneMain
     End Sub
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
+        checkdataleft()
         If CurrentData <= 0 Then
             'MsgBox("You have depleted your monthly package data")
             Timer1.Stop()
@@ -470,7 +472,6 @@ Public Class TelOneMain
             'closeApp()
             Exit Sub
         End If
-        checkdataleft()
     End Sub
 
     ''' <summary>
